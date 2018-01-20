@@ -13,7 +13,7 @@ class Home extends Component {
 	componentDidMount(){
 		var base = this
 
-		let poemApi  = 'http://ShakeItSpeare.com/api/poem'
+		let poemApi  = '/api/shakespeare'
 
 		fetch(poemApi)
 			.then((response) => {
@@ -35,9 +35,9 @@ class Home extends Component {
   	}
     return (
       <div className="Home">
-      <h1> YO YO BIDDIES</h1>
-      	<h1>This is my fav Shakespeare poem:</h1>
+      	<h1>This is my fav Shakespeare poem which may seem odd:</h1>
       	{poetry}
+      	<h2>Because I am a pony!</h2>
       </div>
     );
   }

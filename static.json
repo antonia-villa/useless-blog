@@ -1,0 +1,14 @@
+{
+  "proxies": {
+    "/api/shakespeare": {
+      "origin": "${SHAKESPEARE_API_URL}"
+    }
+  }
+},
+{
+  "root": "build/",
+  "clean_urls": false,
+  "routes": {
+    "/**": "index.html"
+  }
+}
