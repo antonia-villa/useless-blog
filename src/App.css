@@ -1,3 +1,27 @@
+
+body, html {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+h3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15.4px;
+}
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 .Post {
   text-align: center;
 }
@@ -25,4 +49,54 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+#aboutMeContainer{
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  background: #e8e8e8;
+  border: 1px solid #6f7376;
+  border-radius: 2px;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+
+
+#weather {
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+  background: #2f3039;
+  color: white;
+  border: 1px solid #6f7376;
+  border-radius: 2px;
+  box-shadow: 5px 10px 8px 2px #888888;
+}
+
+#aboutMeHeader {
+  color: #2f3039;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#submitForm {
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+    display: inline-block;
+    text-align: center;
+}
+
+label {
+  text-align: center;
+  display:block;
+  margin-bottom: 10px;
+}
+
+input {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
 }

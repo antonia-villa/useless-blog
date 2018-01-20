@@ -17,8 +17,7 @@ import AboutMe from './AboutMe.js';
 import FavoriteFood from './FavoriteFood.js';
 import FavoriteMovie from './FavoriteMovie.js';
 
-
-  var posts = [{
+var posts = [{
   title: 'Ponies 4 LYFE',
   content: 'They are so magestic.',
   author: 'BumbleBee; Confetti',
@@ -35,11 +34,29 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-        <Link to='/'>This goes to the home page </Link>
-        <Link to='/post'>Check out my blog!</Link>
-        <Link to='/about'>About Me</Link>
-        <Link to='/food'>Favorite Food</Link>
-        <Link to='/movie'>Favorite Movie</Link>
+          <nav class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle Nav</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Antonia Villa</a>
+              </div>
+
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><Link to='/'>This goes to the home page </Link></li>
+                  <li class="active"><Link to='/post'>Check out my blog!</Link></li>
+                  <li class="active"><Link to='/about'>About Me</Link></li>
+                  <li class="active"><Link to='/food'>Favorite Food</Link></li>
+                  <li class="active"><Link to='/movie'>Favorite Movie</Link></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
           <Route exact path="/" component={Home} />
           <Route path="/post" component={() => (<Post posts={posts} />)}/>
           <Route exact path="/about" component={AboutMe} />
