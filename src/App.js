@@ -57,6 +57,7 @@ class App extends Component {
               </div>
             </div>
           </nav>
+          <img src="ponies.jpg"></img>
           <Route exact path="/" component={Home} />
           <Route path="/post" component={() => (<Post posts={posts} />)}/>
           <Route exact path="/about" component={AboutMe} />
